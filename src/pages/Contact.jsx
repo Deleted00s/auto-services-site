@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { servicesList } from "../data/services";
+// import { servicesList } from "../data/services";
 
 function Contact() {
   const location = useLocation();
