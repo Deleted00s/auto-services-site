@@ -48,7 +48,7 @@ function Contact() {
       <p className="contact-alt">
         Или напишите напрямую: 
         <a href="https://t.me/твой_ник" target="_blank" rel="noopener">Telegram</a> | 
-        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="tel:+79218909501">+7 (921) 890-95-01</a>
       </p>
     </div>
   );
