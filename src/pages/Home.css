@@ -1,0 +1,107 @@
+/* Плавная прокрутка для всей страницы */
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  width: 100%;
+}
+
+/* Первый экран */
+.hero {
+  min-height: 100vh; /* Занимает весь экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Кнопки */
+.cta-button {
+  padding: 14px 28px;
+  background-color: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #e55a2b;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background-color: white;
+  color: #667eea;
+}
+
+/* Секция "О нас" */
+.about-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 20px; /* Отступ сверху при прокрутке */
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-section ul li {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  color: #444;
+}
