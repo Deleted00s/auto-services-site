@@ -1,0 +1,94 @@
+/* Общие стили шапки */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2c3e50;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #3498db;
+}
+
+/* Бургер-кнопка (скрыта на ПК) */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Анимация крестика */
+.burger .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.burger .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* === МОБИЛЬНАЯ ВЕРСИЯ === */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .burger {
+    display: flex; /* Показываем бургер */
+  }
+
+  .nav-menu {
+    display: none; /* Скрываем меню по умолчанию */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 20px 0;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex; /* Показываем при клике */
+  }
+
+  .nav-menu a {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
