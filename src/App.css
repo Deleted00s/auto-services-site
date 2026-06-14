@@ -1,11 +1,11 @@
 /* === ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ (Меняйте цвета здесь) === */
 :root {
   --primary-color: #1e3a8a;      /* Темно-синий (основной) */
-  --accent-color: #f59e0b;       /* Янтарный (кнопки, акценты) */
-  --bg-color: #f8fafc;           /* Светлый фон */
-  --card-bg: #ffffff;            /* Фон карточек */
-  --text-color: #1e293b;         /* Основной текст */
-  --text-muted: #64748b;         /* Второстепенный текст */
+  --accent-color: #e55a2b;       /* Янтарный (кнопки, акценты) */
+  --bg-color: #0a1628;           /* Светлый фон */
+  --card-bg: rgba(26,39,68,0.6);            /* Фон карточек */
+  --text-color: #ffffff;        /* Основной текст */
+  --text-muted: #d1d5db;         /* Второстепенный текст */
   --border-radius: 8px;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -143,7 +143,7 @@ main {
 
 .order-btn {
   margin-top: auto;
-  background: var(--primary-color);
+  background: #ff6b35;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -152,10 +152,13 @@ main {
   font-size: 1rem;
   font-weight: 600;
   transition: background 0.2s;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
 .order-btn:hover {
-  background: #172554;
+  background: #e55a2b;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
 }
 
 /* === CONTACT FORM === */
