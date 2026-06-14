@@ -1,4 +1,4 @@
-/* Плавная прокрутка для всей страницы */
+/* Плавная прокрутка */
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +9,7 @@ html {
 
 /* Первый экран */
 .hero {
-  min-height: 100vh; /* Занимает весь экран */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,47 +23,70 @@ html {
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
 
-.buttons {
+.highlight-link {
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Группа кнопок с отступом */
+.button-group {
   display: flex;
-  gap: 15px;
+  gap: 20px; /* Отступ между кнопками */
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Кнопки */
-.cta-button {
-  padding: 14px 28px;
+/* Базовые стили для всех кнопок */
+.btn {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+
+/* Основная кнопка (яркая) */
+.btn-primary {
   background-color: #ff6b35;
   color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: transform 0.2s, background-color 0.2s;
-  border: none;
-  cursor: pointer;
+  border-color: #ff6b35;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
-.cta-button:hover {
+.btn-primary:hover {
   background-color: #e55a2b;
-  transform: translateY(-2px);
+  border-color: #e55a2b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
 }
 
-.cta-button.secondary {
+/* Контурная кнопка (прозрачная с рамкой) */
+.btn-outline {
   background-color: transparent;
-  border: 2px solid white;
+  color: white;
+  border-color: white;
 }
 
-.cta-button.secondary:hover {
+.btn-outline:hover {
   background-color: white;
   color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Секция "О нас" */
@@ -76,7 +99,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  scroll-margin-top: 20px; /* Отступ сверху при прокрутке */
+  scroll-margin-top: 20px;
 }
 
 .about-section h2 {
@@ -104,4 +127,27 @@ html {
   font-size: 1.1rem;
   padding: 10px 0;
   color: #444;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
