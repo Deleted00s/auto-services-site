@@ -6,18 +6,16 @@ function Contact() {
   const location = useLocation();
   const [selectedService, setSelectedService] = useState("");
 
-  // Если перешли со страницы услуг → подставляем название
   useEffect(() => {
     if (location.state?.title) {
       setSelectedService(location.state.title);
     }
   }, [location.state]);
   //entry.911813669 entry.103745988 entry.1205819379 entry.2074988492 entry.1119703185 entry.268507616 entry.2001483535
-  // 🔧 НАСТРОЙКИ ФОРМЫ (ЗАМЕНИ НА СВОИ!)
-  const FORM_ID = "1FAIpQLSdBPvbba3gcXXCqU7cs7NXMCwqIfprBmu3oab3zwuh8RkjnFQ"; // Часть между /d/e/ и /viewform
-  const ENTRY_SERVICE = "entry.1205819379"; // Замени на свой entry для поля "Услуга"
+
+  const FORM_ID = "1FAIpQLSdBPvbba3gcXXCqU7cs7NXMCwqIfprBmu3oab3zwuh8RkjnFQ";
+  const ENTRY_SERVICE = "entry.1205819379";
   
-  // Формируем ссылку с автозаполнением услуги
   const formUrl = `https://docs.google.com/forms/d/e/${FORM_ID}/viewform?usp=pp_url&${ENTRY_SERVICE}=${encodeURIComponent(selectedService || "")}`;
 
   return (
