@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="header">
-      <h1 className="logo">Имя Фамилия</h1>
+      <h1 className="logo">Засор Канал Профиль</h1>
 
       {/* Кнопка-бургер */}
       <div className="burger" onClick={() => setIsOpen(!isOpen)}>
