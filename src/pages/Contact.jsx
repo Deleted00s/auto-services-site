@@ -20,7 +20,12 @@ function Contact() {
 
   return (
     <div className="contact-page">
-      <h2>Оставить заявку</h2>
+      <p className="contact-alt">
+        напишите напрямую: 
+        <a href="https://t.me/твой_ник" target="_blank" rel="noreferrer noopener">Telegram</a> | 
+        <a href="tel:+79218909501">+7 (921) 890-95-01</a>
+      </p>
+      <h2>или оставьте заявку</h2>
       
       {selectedService && (
         <p className="service-badge">
@@ -43,11 +48,7 @@ function Contact() {
         </iframe>
       </div>
 
-      <p className="contact-alt">
-        Или напишите напрямую: 
-        <a href="https://t.me/твой_ник" target="_blank" rel="noreferrer noopener">Telegram</a> | 
-        <a href="tel:+79218909501">+7 (921) 890-95-01</a>
-      </p>
+      
     </div>
   );
 }
