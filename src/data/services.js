@@ -1,9 +1,19 @@
-export const servicesList = [{id : 1 , title : "Гидродинамическая прочистка", price : "от x рублей", priceValue : 10 , desc : "Высокоэффективная технология очистки, отлично удаляет отложения любого типа с помощью мощного напора воды."},
-    {id : 2 , title : "услуга 2", price : "от y рублей", priceValue : 20 , desc : "отлично для...."},
-    {id : 3 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
-    {id : 4 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
-    {id : 5 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
-    {id : 6 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
-    {id : 7 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
-    {id : 8 , title : "услуга 3", price : "от z рублей", priceValue : 30 , desc : "отлично для...."},
+export const servicesList = [
+  {
+    id: 1,
+    title: "Гидродинамическая прочистка",
+    price: "от 1000 рублей",
+    priceValue: 1000,
+    desc: "Высокоэффективная технология очистки, отлично удаляет отложения любого типа с помощью мощного напора воды.",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400&h=250&fit=crop"
+  },
+  {
+    id: 1,
+    title: "Механическая прочистка",
+    price: "от 1000 рублей",
+    priceValue: 1000,
+    desc: "Метод очистки, разрушает мусор с помощью длинного гибкого троса, попадая в самые труднодоступные места.",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400&h=250&fit=crop"
+  },
+  
 ];

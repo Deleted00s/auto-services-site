@@ -141,7 +141,6 @@ main {
 }
 
 .description {
-  outline: 5px solid var(--bg-color);
   border-radius: 5px;
 }
 

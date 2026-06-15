@@ -94,7 +94,7 @@ html {
 .about-section {
   min-height: 100vh;
   padding: 80px 20px;
-  background: linear-gradient(180deg, #1a2744, #687183);
+  background: linear-gradient(180deg, #1a2744, #3e434e);
   border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
@@ -123,12 +123,13 @@ html {
   padding: 0;
   max-width: 500px;
   text-align: left;
+  
 }
-
 .about-section ul li {
   font-size: 1.1rem;
   padding: 10px 0;
   color: #ffffff;
+  
 }
 
 /* Адаптивность для мобильных */
