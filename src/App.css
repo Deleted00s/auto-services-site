@@ -4,8 +4,8 @@
   --accent-color: #e55a2b;       /* Янтарный (кнопки, акценты) */
   --bg-color: #0a1628;           /* Светлый фон */
   --card-bg: rgba(26,39,68,0.6);            /* Фон карточек */
-  --text-color: #ffffff;        /* Основной текст */
-  --text-muted: #d1d5db;         /* Второстепенный текст */
+  --text-color: whitesmoke;        /* Основной текст */
+  --text-muted: #ffffff8e;         /* Второстепенный текст */
   --border-radius: 8px;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -74,7 +74,7 @@ main {
 
 .home h2 {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: whitesmoke;
   margin-bottom: 1rem;
 }
 
@@ -102,10 +102,16 @@ main {
 }
 
 /* === SERVICES === */
+
+.services {
+  background: linear-gradient(180deg, var(--bg-color), var(--card-bg));
+  border-radius: 5px;
+}
+
 .services h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .services-grid {
@@ -130,8 +136,13 @@ main {
 }
 
 .service-card h3 {
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 0.5rem;
+}
+
+.description {
+  outline: 5px solid var(--bg-color);
+  border-radius: 5px;
 }
 
 .price {
@@ -140,6 +151,7 @@ main {
   color: var(--accent-color);
   margin: 0.5rem 0 1rem;
 }
+
 
 .order-btn {
   margin-top: auto;

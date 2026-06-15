@@ -24,7 +24,7 @@ function Services() {
           <div key={service.id} className="service-card">
             <h3>{service.title}</h3>
             <p className="price">{service.price}</p>
-            <p>{service.desc}</p>
+            <p class = "description">{service.desc}</p>
             <button 
               className="order-btn"
               onClick={() => handleOrderClick(service)}  // Правильно

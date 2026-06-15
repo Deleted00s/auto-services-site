@@ -16,9 +16,9 @@ html {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(to top, #0a1628, #1a2744);
-  color: white;
-  border-radius: 1%;
+  background: linear-gradient(to top, #1a2744, #0a1628);
+  color: rgb(227, 238, 255);
+  border-radius: 5px 5px 0 0;
 }
 
 .hero h2 {
@@ -94,7 +94,8 @@ html {
 .about-section {
   min-height: 100vh;
   padding: 80px 20px;
-  background: linear-gradient(180deg, #0a1628, #1a2744);
+  background: linear-gradient(180deg, #1a2744, #687183);
+  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,14 +106,14 @@ html {
 
 .about-section h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: #eeeeee;
   margin-bottom: 30px;
 }
 
 .about-section p {
   font-size: 1.1rem;
   max-width: 700px;
-  color: #555;
+  color: #ebebeb;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -127,7 +128,7 @@ html {
 .about-section ul li {
   font-size: 1.1rem;
   padding: 10px 0;
-  color: #444;
+  color: #ffffff;
 }
 
 /* Адаптивность для мобильных */
