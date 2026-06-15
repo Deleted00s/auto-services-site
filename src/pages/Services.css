@@ -100,10 +100,10 @@
 /* Подвал карточки - ИСПРАВИЛИ */
 .service-footer {
   display: flex;
-  justify-content: space-between; /* Распределяем пространство */
+  justify-content: center; /* Распределяем пространство */
   align-items: center;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   gap: 1rem; /* Отступ между ценой и кнопкой */
 }
@@ -117,7 +117,7 @@
 }
 
 /* Кнопка */
-.order-btn {
+/* .order-btn {
   background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
   color: white;
   border: none;
@@ -130,7 +130,7 @@
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
   white-space: nowrap;
   flex-shrink: 0; /* Кнопка не сжимается */
-}
+ */
 
 .order-btn:hover {
   background: linear-gradient(135deg, #e55a2b 0%, #ff6b35 100%);
