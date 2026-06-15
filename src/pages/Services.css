@@ -117,11 +117,11 @@
 }
 
 /* Кнопка */
-/* .order-btn {
+.order-btn {
   background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
   color: white;
   border: none;
-  padding: 1.2rem 4rem;
+  padding: 12rem 4rem;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
@@ -130,7 +130,7 @@
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
   white-space: nowrap;
   flex-shrink: 0; /* Кнопка не сжимается */
- */
+}
 
 .order-btn:hover {
   background: linear-gradient(135deg, #e55a2b 0%, #ff6b35 100%);

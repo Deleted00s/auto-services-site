@@ -37,6 +37,7 @@ function Services() {
             <div className="service-content">
               <h3>{service.title}</h3>
               <p className="price">{service.price}</p>
+              
               <p className="service-description">{service.desc}</p>
               
               <div className="service-footer">
