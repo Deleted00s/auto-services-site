@@ -20,7 +20,7 @@ export const servicesList = [
     title: "Химическая прочистка",
     price: "от 1000 рублей",
     priceValue: 1000,
-    desc: "Метод очистки, рахрушиющий загрязнения щелочами и кислотами.",
+    desc: "Метод очистки, удаляющий загрязнения щелочами и кислотами.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YOBZZ1DQGlXiN7jQylck8-ayiGBKAmAYA2TI2M_URcm5j_i7egoquwxO&s=10"
   },
 
