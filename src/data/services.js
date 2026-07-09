@@ -17,11 +17,11 @@ export const servicesList = [
   },
   {
     id: 3,
-    title: "Химическая прочистка",
+    title: "Телеинспекция",
     price: "от 1000 рублей",
     priceValue: 1000,
-    desc: "Метод очистки, удаляющий загрязнения щелочами и кислотами.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YOBZZ1DQGlXiN7jQylck8-ayiGBKAmAYA2TI2M_URcm5j_i7egoquwxO&s=10"
+    desc: "Метод дистанционного обследования труб и инженерных коммуникаций, позволяет найти все утечки, засоры, трещины.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYURUZo1MRITKMhyTL2L1sBlya-S5WqLQypcE_L1IkpBcz-ubLFrkp-m3e&s=10"
   },
 
 ];
