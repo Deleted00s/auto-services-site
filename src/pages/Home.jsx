@@ -30,17 +30,96 @@ function Home() {
         </div>
       </section>
 
+      {/* Секция с изображениями работ */}
+      <section className="gallery-section">
+        <h2>Наши работы</h2>
+        <div className="gallery-grid">
+          <div className="gallery-item">
+            <img 
+              src="/images/plumbing-work-1.jpg" 
+              alt="Устранение засора" 
+              loading="lazy"
+            />
+            <p>Устранение засоров</p>
+          </div>
+          <div className="gallery-item">
+            <img 
+              src="/images/plumbing-work-2.jpg" 
+              alt="Монтаж сантехники" 
+              loading="lazy"
+            />
+            <p>Монтаж сантехники</p>
+          </div>
+          <div className="gallery-item">
+            <img 
+              src="/images/plumbing-work-3.jpg" 
+              alt="Ремонт труб" 
+              loading="lazy"
+            />
+            <p>Ремонт труб</p>
+          </div>
+          <div className="gallery-item">
+            <img 
+              src="/images/plumbing-work-4.jpg" 
+              alt="Диагностика систем" 
+              loading="lazy"
+            />
+            <p>Диагностика систем</p>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="about-section">
-        <h2>О нас</h2>
-        <p>
-          «Засор Канал Профи» — профессиональная команда сантехников в Санкт-Петербурге. Специализируемся на коммерческих объектах: от офисов и магазинов до ресторанов и производств. Работаем оперативно, используем современное оборудование для устранения засоров любой сложности и ремонта инженерных систем. Надежно, качественно, с гарантией результата.
-        </p>
-        {/* <ul>
-          <li> Гарантия на все виды работ — 2 года</li>
-          <li> Выезд мастера в день обращения</li>
-          <li> используем гидродинамическое и электромеханическое оборудование</li>
-          <li> Работаем по договору</li>
-        </ul> */}
+        <div className="about-content">
+          <div className="about-text">
+            <h2>О нас</h2>
+            <p>
+              «Засор Канал Профи» — профессиональная команда сантехников в Санкт-Петербурге. Специализируемся на коммерческих объектах: от офисов и магазинов до ресторанов и производств. Работаем оперативно, используем современное оборудование для устранения засоров любой сложности и ремонта инженерных систем. Надежно, качественно, с гарантией результата.
+            </p>
+          </div>
+          <div className="about-image">
+            <img 
+              src="/images/about-team.jpg" 
+              alt="Команда Засор Канал Профи" 
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Секция с преимуществами и изображениями */}
+      <section className="features-section">
+        <h2>Почему выбирают нас</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <div className="feature-icon">
+              <img src="/icons/guarantee.svg" alt="Гарантия" />
+            </div>
+            <h3>Гарантия 2 года</h3>
+            <p>На все виды сантехнических работ</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">
+              <img src="/icons/quick.svg" alt="Быстро" />
+            </div>
+            <h3>Выезд в день обращения</h3>
+            <p>Оперативное решение любой проблемы</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">
+              <img src="/icons/equipment.svg" alt="Оборудование" />
+            </div>
+            <h3>Современное оборудование</h3>
+            <p>Гидродинамическое и электромеханическое</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">
+              <img src="/icons/contract.svg" alt="Договор" />
+            </div>
+            <h3>Работа по договору</h3>
+            <p>Все услуги официально оформляются</p>
+          </div>
+        </div>
       </section>
     </div>
   );
