@@ -30,8 +30,8 @@ function Home() {
         </div>
       </section>
 
-      {/* Секция с изображениями работ */}
-      <section className="gallery-section">
+      
+      {/* <section className="gallery-section">
         <h2>Наши работы</h2>
         <div className="gallery-grid">
           <div className="gallery-item">
@@ -67,12 +67,14 @@ function Home() {
             <p>Диагностика систем</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="about" className="about-section">
         <div className="about-content">
           <div className="about-text">
-            <h2>О нас</h2>
+            <h1>
+              О нас
+            </h1>
             <p>
               «Засор Канал Профи» — профессиональная команда сантехников в Санкт-Петербурге. Специализируемся на коммерческих объектах: от офисов и магазинов до ресторанов и производств. Работаем оперативно, используем современное оборудование для устранения засоров любой сложности и ремонта инженерных систем. Надежно, качественно, с гарантией результата.
             </p>
@@ -103,7 +105,7 @@ function Home() {
               <img src="/icons/quick.svg" alt="Быстро" />
             </div>
             <h3>Выезд в день обращения</h3>
-            <p>Оперативное решение любой проблемы</p>
+            <p>Оперативное решение любой проблемы</p>=
           </div>
           <div className="feature-card">
             <div className="feature-icon">
