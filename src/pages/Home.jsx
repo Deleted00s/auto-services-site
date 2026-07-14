@@ -81,7 +81,7 @@ function Home() {
           </div>
           <div className="about-image">
             <img 
-              src="/images/about-team.png" 
+              src="/images/1397.jpg" 
               alt="Команда Засор Канал Профи" 
               loading="lazy"
             />
